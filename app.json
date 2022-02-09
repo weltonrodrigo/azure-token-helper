@@ -1,0 +1,29 @@
+{
+    "name": "azure-token-helper",
+    "env": {
+        "AZURE_TENANT_ID": {
+            "description": "Tenant ID for authentication",
+            "required": true
+        },
+        "AZURE_CLIENT_ID": {
+            "description": "Client ID for authentication"
+        },
+        "AZURE_CLIENT_SECRET": {
+            "description": "Client Secret for authentication"
+        },
+        "AZURE_TOKEN_HELPER_SCOPE_CORS_ORIGINS": {
+            "description": "Origins allowed to call this api"
+        },
+        "ORDERED_ENV": {
+            "description": "control the order env variables are prompted",
+            "order": 100
+        }
+    },
+    "options": {
+        "allow-unauthenticated": true,
+        "memory": "512Mi",
+        "cpu": "1",
+        "port": 80,
+        "http2": false
+    }
+}
