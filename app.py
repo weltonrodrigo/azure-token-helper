@@ -49,7 +49,7 @@ app.add_middleware(
 
 app.add_middleware(GZipMiddleware)
 
-@app.get("/", response_class=PlainTextResponse)
+@app.get("/{full_path:path}", response_class=PlainTextResponse)
 async def do() -> str:
     try:
         async with credential:
