@@ -11,7 +11,7 @@
         "AZURE_CLIENT_SECRET": {
             "description": "Client Secret for authentication"
         },
-        "AZURE_TOKEN_HELPER_SCOPE_CORS_ORIGINS": {
+        "AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS": {
             "description": "Origins allowed to call this api"
         },
         "ORDERED_ENV": {

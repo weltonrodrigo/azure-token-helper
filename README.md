@@ -15,7 +15,7 @@ AZURE_CLIENT_ID=b51c2235-cff0-4f69-8dee-0f43c2ab4457
 AZURE_CLIENT_SECRET=zoquIWM-vnX9kg_F~.kP38gpSB2B772eop
 
 # List of allowed Origins
-AZURE_TOKEN_HELPER_SCOPE_CORS_ORIGINS=http://localhost:8001
+AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS=http://localhost:8001,https://cdpn.io
 ```
 
 Open an issue if you need help creating the application credentials in Azure AD. Basically, you

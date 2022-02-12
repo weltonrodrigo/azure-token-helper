@@ -36,7 +36,7 @@ if config.CORS_ORIGINS:
     ll.warn(f"Allowing origins {LIST_CORS_ORIGINS}")
 else:
     LIST_CORS_ORIGINS = []  # empty list deny all origins
-    ll.warn(f"No AZURE_TOKEN_HELPER_SCOPE_CORS_ORIGINS set. Denying all origins.")
+    ll.warn(f"No AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS set. Denying all origins.")
 
 app = FastAPI()
 app.add_middleware(
