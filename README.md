@@ -18,8 +18,8 @@ AZURE_CLIENT_SECRET=zoquIWM-vnX9kg_F~.kP38gpSB2B772eop
 AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS=http://localhost:8001,https://cdpn.io
 ```
 
-Open an issue if you need help creating the application credentials in Azure AD. Basically, you
-can use the script ```create_credentials.azcli```
+Open an issue if you need help creating the application credentials in Azure AD and I'll
+document it here. Basically, you can use the script ```create_credentials.azcli```
 
 You still will need to add permission to impersonate the user on the API and to query Azure Maps.
 
