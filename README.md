@@ -10,12 +10,21 @@ You'll need a token helper. This is it.
 Environment variables:
 
 ```shell
+# Note that you still have to give this client permission
+# to impersonate itself for the scope you want.
+# This is done at Azure Active Directory App Registrations
 AZURE_TENANT_ID=e8f5849e-5b15-4c2f-b4f3-0386b614971f
 AZURE_CLIENT_ID=b51c2235-cff0-4f69-8dee-0f43c2ab4457
 AZURE_CLIENT_SECRET=zoquIWM-vnX9kg_F~.kP38gpSB2B772eop
 
 # List of allowed Origins
 AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS=http://localhost:8001,https://cdpn.io
+
+# Scope for the requested token
+# Default is https://atlas.microsoft.com/.default , for Azure Maps,
+# but you can actually use this for any azure scope, given proper
+# permissions.
+AZURE_TOKEN_HELPER_SCOPE=https://atlas.microsoft.com/.default
 ```
 
 Open an issue if you need help creating the application credentials in Azure AD and I'll
