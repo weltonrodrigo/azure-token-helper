@@ -14,10 +14,6 @@
         "AZURE_TOKEN_HELPER_ALLOWED_CORS_ORIGINS": {
             "description": "Origins allowed to call this api"
         },
-        "ORDERED_ENV": {
-            "description": "control the order env variables are prompted",
-            "order": 100
-        }
     },
     "options": {
         "allow-unauthenticated": true,
