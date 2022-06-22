@@ -43,3 +43,13 @@ Help me improve this documentation.
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
 Run this on google cloud run, it's so much easier LOL. You still need the credentials, tough.
+
+# Run with docker
+
+```shell
+docker run --rm -ti -p 8080:80 \
+   -e AZURE_TENANT_ID=e8f5849e-5b15-4c2f-b4f3-0386b614971f \
+   -e AZURE_CLIENT_ID=b51c2235-cff0-4f69-8dee-0f43c2ab4457 \
+   -e AZURE_CLIENT_SECRET=zoquIWM-vnX9kg_F~.kP38gpSB2B772eop \
+   weltonrodrigo/azure-token-helper
+```
